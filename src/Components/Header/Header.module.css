@@ -1,0 +1,41 @@
+.header {
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+  width: 90%;
+  margin: 0 auto;
+  color: #8b919b;
+}
+
+.pharmacy_title a {
+  color: #000000;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.list_conteiner {
+    margin-left: 16em;
+}
+
+.list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.list li {
+  list-style-type: none;
+}
+
+.list_item {
+  text-decoration: none;
+  color: #000000;
+  font-size: 1.3em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.list_item:hover {
+  color: #2923df;
+  transition: 0.8s;
+}
