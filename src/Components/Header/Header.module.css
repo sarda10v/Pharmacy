@@ -1,10 +1,26 @@
 .header {
   display: flex;
+  position: relative;
+}
+
+.header_img {
+  width: 9em;
+  position: absolute;
+  margin: 0 0 10em 8em;
+}
+
+.img {
+  width: 100%;
+}
+
+.header_menu {
+  display: flex;
   align-items: center;
-  padding: 15px 0;
-  width: 90%;
-  margin: 0 auto;
-  color: #8b919b;
+  padding: 15px 18em;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 1.5em;
+  background-color: #1f5db1;
 }
 
 .pharmacy_title a {
@@ -13,15 +29,11 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.list_conteiner {
-    margin-left: 16em;
-}
-
 .list {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  gap: 40px;
+  gap: 20px;
 }
 
 .list li {
@@ -29,13 +41,18 @@
 }
 
 .list_item {
-  text-decoration: none;
   color: #000000;
+  background-color: transparent;
+  display: block;
+  cursor: pointer;
   font-size: 1.3em;
+  text-decoration: none;
+  margin-right: 1rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-bottom: 0.25rem solid rgba(205, 214, 219, 0);
 }
 
 .list_item:hover {
-  color: #2923df;
-  transition: 0.8s;
+  border-bottom: 0.25rem solid rgb(255, 255, 255);
+  color: #ffffff;
 }
