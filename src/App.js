@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import Header from "./Components/Header/Header";
 import Home from "./Components/Home/Home";
 import Footer from "./Components/Footer/Footer";
+import Search from "./Components/SearchPharmacies/Search";
 import Pharmacies from "./Components/Pharmacies/Pharmacies";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <div className="main_global">
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/search" element={<Search />} />
           <Route path="/pharmacy" element={<Pharmacies />} />
         </Routes>
       </div>

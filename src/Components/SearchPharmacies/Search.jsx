@@ -1,18 +1,12 @@
-import React, { useState } from "react";
-import styles from "./Pharmacies.module.css";
-import CardPharmacy from "../CardPharmacy/CardPharmacy";
-import { useSelector } from "react-redux";
-import { NavLink } from "react-router-dom";
+import React, { useState } from 'react';
+import styles from "./Search.module.css"
+import { useSelector } from 'react-redux';
+import CardPharmacy from '../CardPharmacy/CardPharmacy';
+import { NavLink } from 'react-router-dom';
 
-const Pharmacies = () => {
-  const pharmacy = useSelector((state) => state.pharmacysReducer.pharmacies);
-  const sidebar = useSelector((state) => state.pharmacysReducer.sidebar);
-  const [activeIndex, setActiveIndex] = useState(0);
+const Search = () => {
+    const pharmacy = useSelector((state) => state.pharmacysReducer.pharmacies);
   const [search, setSearch] = useState('');
-
-  const onClickCategory = (id) => {
-    setActiveIndex(id);
-  };
 
   const filtredSearchPharmacy = pharmacy.filter(item => {
     return item.name.toLowerCase().includes(search.toLowerCase())
@@ -21,22 +15,8 @@ const Pharmacies = () => {
   return (
     <div className={styles.pharmacies}>
       <div className={styles.title_pharmacies}>Каталог</div>
+        <NavLink to="/" className={styles.hfree}>« Вернуться</NavLink>
       <div className={styles.wrap_content_pharmacies}>
-        <div className={styles.sideBar_pharmacies}>
-          {sidebar.map((item) => {
-            return (
-              <NavLink
-                onClick={() => onClickCategory(item.id)}
-                className={`${
-                  activeIndex === item.id ? styles.active : styles.ul_sidebare
-                }`}
-                key={item.id}
-              >
-                {item.title}
-              </NavLink>
-            );
-          })}
-        </div>
         <div className={styles.content_pharmacies}>
           <div className={styles.search_pharmacies}>
             <div className={styles.search_box}>
@@ -74,5 +54,4 @@ const Pharmacies = () => {
   );
 };
 
-export default Pharmacies;
-// activeIndex === item.id ? "styles.active" : ""
+export default Search;
