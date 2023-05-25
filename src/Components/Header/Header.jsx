@@ -18,7 +18,7 @@ const Header = () => {
         <div className={styles.list_conteiner}>
           <ul className={styles.list}>
             <li>
-              <NavLink to="/" className={styles.list_item}>
+              <NavLink to="/pharmacy" className={styles.list_item}>
                 Аптеки
               </NavLink>
             </li>

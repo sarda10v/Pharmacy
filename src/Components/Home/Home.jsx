@@ -25,7 +25,7 @@ const Home = () => {
                 placeholder="название лекарственного препарата"
               />
               <Link className={styles.search_btn} to="/">
-                <i class="fas fa-search"></i>
+                <i className="fas fa-search"></i>
               </Link>
             </form>
           </div>
