@@ -56,3 +56,16 @@
   border-bottom: 0.25rem solid rgb(255, 255, 255);
   color: #ffffff;
 }
+
+
+.active {
+  background-color: transparent;
+  display: block;
+  cursor: pointer;
+  font-size: 1.3em;
+  text-decoration: none;
+  margin-right: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-bottom: 0.25rem solid rgb(255, 255, 255);
+  color: #ffffff;
+}

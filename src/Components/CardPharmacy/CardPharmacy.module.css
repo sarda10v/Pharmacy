@@ -78,7 +78,7 @@
 
 
 
-button {
+.cinemaWrapperInformation button {
   --primary-color: #1f5db1;
   --secondary-color: #ffffff;
   --hover-color: #ffffff;
@@ -96,7 +96,7 @@ button {
   margin-left: 18em;
 }
 
-button:hover {
+.cinemaWrapperInformation button:hover {
   background-color: var(--hover-color);
   color: #000;
 }

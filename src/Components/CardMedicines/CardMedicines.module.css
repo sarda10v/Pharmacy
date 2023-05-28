@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.cardMedicines {
+  flex-wrap: wrap;
+  display: flex;
+  margin: 0 1.65% 4%;
+  width: 21em;
+  height: 22em;
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  border-radius: 25px;
+  padding: 10px;
+}
+
+.wrap_img_cardMedicines {
+  width: 350px;
+  height: 240px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid black;
+}
+
+.wrap_img_cardMedicines img {
+  width: 90%;
+}
+
+.wrapper_content {
+  width: 100%;
+  display: flex !important;
+  flex-direction: column !important;
+  overflow: hidden;
+}
+
+.name_medicines {
+    padding: 0 0.7em;
+}
+
+.wrapper_button {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: auto;
+}
+
+.wrapper_button button {
+  --primary-color: #3589ffaf;
+  --secondary-color: #000000;
+  --hover-color: #1f5db1;
+  border: 0;
+  border-radius: 20px;
+  color: var(--secondary-color);
+  padding: 0.5em 1.1em;
+  background: var(--primary-color);
+  display: flex;
+  transition: 0.2s background;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 0.5em;
+}
+
+.wrapper_button button:hover {
+  background-color: var(--hover-color);
+  color: #ffffff;
+}
