@@ -1,5 +1,5 @@
 .pharmacies {
-    margin-top: 2em;
+    margin-top: 2.5em;
   }
   
   .title_pharmacies {
@@ -9,7 +9,6 @@
   }
   
   .wrap_content_pharmacies {
-    margin-top: 1em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,6 +28,7 @@
     background-color: #d6d6dc;
     border-radius: 25px;
     padding: 0.5em;
+    width: 66em;
   }
   
   .search_btn {
@@ -51,7 +51,7 @@
     color: rgb(0, 0, 0);
     font-size: 1.1em;
     line-height: 40px;
-    width: 22em;
+    width: 93%;
   }
   
   .wrap_card {

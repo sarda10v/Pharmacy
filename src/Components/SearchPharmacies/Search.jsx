@@ -14,7 +14,7 @@ const Search = () => {
 
   return (
     <div className={styles.pharmacies}>
-      <div className={styles.title_pharmacies}>Каталог</div>
+      <div className={styles.title_pharmacies}>По вашему запросу найдено</div>
       <NavLink to="/" className={styles.hfree}>
         « Вернуться
       </NavLink>

@@ -8,56 +8,61 @@
   text-align: center;
 }
 
+.title_category_pharmacies {
+  font-size: 1.3em;
+  font-weight: 600;
+  margin: 0 0 2em 2.5em;
+}
+
 .wrap_content_pharmacies {
   margin-top: 1em;
   display: flex;
 }
 
 .sideBar_pharmacies {
-  height: 30em;
+  height: 25em;
   border-right: 2px solid black;
   margin: 0 2em;
-  font-size: 1.2em;
+  font-size: 1.1em;
+  padding-top: 0.1px;
 }
 
 .ul_sidebare {
-  margin: 2em 1.5em 0 0;
+  margin: 1em 1.5em 0 0;
   text-decoration: none;
   background-color: #1f5cb100;
   color: #000000;
   border-radius: 6px;
   padding: 1em 1.5em 1em 1em;
   display: flex;
-  align-items:center;
+  align-items: center;
   justify-content: center;
   text-align: center;
 }
 
-.active{
-    margin: 2em 1.5em 0 0;
+.active {
+  margin: 1em 1.5em 0 0;
   text-decoration: none;
   background-color: #1f5cb1f8;
   color: #ffffff;
   border-radius: 6px;
   padding: 1em 1.5em 1em 1em;
   display: flex;
-  align-items:center;
+  align-items: center;
   justify-content: center;
   text-align: center;
-  }
-
-  
+}
 
 .content_pharmacies {
   display: flex;
   flex-direction: column;
-  margin: 1.5em 0 0 2em;
+  margin: 1.5em 0 2em 2em;
 }
 
 .search_pharmacies {
-    display: flex;
-    justify-content: center;
-    width: 85%;
+  display: flex;
+  justify-content: center;
+  width: 85%;
 }
 
 .search_box {
@@ -90,8 +95,8 @@
 }
 
 .wrap_card {
-width: 1100px;
-flex-wrap: wrap;
+  width: 1100px;
+  flex-wrap: wrap;
 }
 
 .content {

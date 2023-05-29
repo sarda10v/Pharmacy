@@ -72,7 +72,8 @@ const initialState = {
         {
             id: 0,
             img: "https://cdn.eapteka.ru/upload/offer_photo/105/234/1_97040e36acdf6a8fe66ceb2030ba296d.png?t=1646914516&_cvc=1685092389",
-            name: "Амоксициллин, капсулы 500 мг 16 шт"
+            name: "Амоксициллин, капсулы 500 мг 16 шт",
+            
         },
         {
             id: 1,

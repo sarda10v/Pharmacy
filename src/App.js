@@ -4,8 +4,8 @@ import Home from "./Components/Home/Home";
 import Footer from "./Components/Footer/Footer";
 import Search from "./Components/SearchPharmacies/Search";
 import Pharmacies from "./Components/Pharmacies/Pharmacies";
-import CardMedicines from "./Components/CardMedicines/CardMedicines";
 import Medicines from "./Components/Medicines/Medicines";
+import MoreAboutPharmacies from "./Components/MoreAboutPharmacies/MoreAboutPharmacies";
 
 function App() {
   return (
@@ -19,6 +19,7 @@ function App() {
           <Route path="/search" element={<Search />} />
           <Route path="/medicines" element={<Medicines />} />
           <Route path="/pharmacy" element={<Pharmacies />} />
+          <Route path="/moreAboutPharmacies" element={<MoreAboutPharmacies />} />
         </Routes>
       </div>
       <div className="footer_global">

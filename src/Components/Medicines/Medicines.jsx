@@ -24,23 +24,37 @@ const Medicines = () => {
     <div className={styles.medicines}>
       <div className={styles.title_medicines}>Лекарственные препараты</div>
       <div className={styles.wrap_content_medicines}>
-         <div>
-          <div className={styles.title_category}>Категории лекарств</div>
-        <div className={styles.sideBar_medicines}>
-          {sidebarMedicines.map((item) => {
-            return (
-              <NavLink
-                onClick={() => onClickCategory(item.id)}
-                className={`${
-                  activeIndex === item.id ? styles.active : styles.ul_sidebare
-                }`}
-                key={item.id}
-              >
-                {item.title}
-              </NavLink>
-            );
-          })}
-        </div>
+        <div>
+          <div className={styles.title_category}>Фильтр по:</div>
+          <div className={styles.sideBar_medicines}>
+            <ul className={styles.menu}>
+              <ul className={styles.menu_list}>
+                <a>категориям</a>
+                <ul className={styles.menu_drop}>
+                  {sidebarMedicines.map((item) => {
+                    return (
+                      <li>
+                        <NavLink
+                          onClick={() => onClickCategory(item.id)}
+                          className={styles.ul_sidebare}
+                          key={item.id}
+                        >
+                          {item.title}
+                        </NavLink>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </ul>
+              <ul className={styles.menu_list}>
+                <a>типу препарата</a>
+                <ul className={styles.menu_drop}>
+                  <li><a>Рецептурные препараты</a></li>
+                  <li><a>Безрецептурные препараты</a></li>
+                </ul>
+              </ul>
+            </ul>
+          </div>
         </div>
         <div className={styles.content_medicines}>
           <div className={styles.search_medicines}>

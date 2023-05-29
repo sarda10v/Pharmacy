@@ -32,7 +32,7 @@
 
 .wrapper_content {
   width: 100%;
-  display: flex !important;
+  display: flex !important;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
   flex-direction: column !important;
   overflow: hidden;
 }
@@ -62,7 +62,7 @@
   align-items: center;
   font-weight: bold;
   cursor: pointer;
-  margin-right: 0.5em;
+  margin-right: 1em;
 }
 
 .wrapper_button button:hover {

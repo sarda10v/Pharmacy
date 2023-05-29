@@ -19,39 +19,91 @@
   margin: 0 0 2em 2.5em;
 }
 
+/* __________________________________________ */
+
+
+
+
+
 .sideBar_medicines {
-  height: 77em;
-  border-right: 2px solid black;
   margin: 0 1em;
-  font-size: 1.2em;
-  padding-top: 0.1em;
+  width: 180px;
 }
 
-.ul_sidebare {
-  margin: 2em 1em 0 0;
-  text-decoration: none;
-  background-color: #1f5cb100;
+.menu_list {
+  font-size: 1.3em;
+  text-align: right;
   color: #000000;
-  border-radius: 6px;
-  padding: 1em 1.5em 1em 1em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  position: relative;
+  margin-bottom: 2em;
 }
 
-.active {
-  margin: 2em 1em 0 0;
-  text-decoration: none;
-  background-color: #1f5cb1f8;
-  color: #ffffff;
-  border-radius: 6px;
-  padding: 1em 1.5em 1em 1em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+.menu_list::after {
+  content: ' ';
+  position: absolute;
+  border: 7px solid;
+  border-color: transparent transparent transparent #d6d6dc;
+  top: 0.85em;
+  transition: 0.5s;
 }
+
+.menu_list:hover:after {
+  transform: scaleX(-1);
+  right: -0.2em;
+}
+
+.menu_list:hover .menu_drop {
+  opacity: 1;
+  transition: 0.5s opacity;
+  top: 5px;
+}
+
+.menu_drop {
+  text-align: left;
+  position: absolute;
+  width: 250px;
+  border-left: 10px solid transparent;
+  left: 100%;
+  top: -9999em;
+  opacity: 0;
+}
+
+.menu_drop li {
+  background-color:  #d6d6dc;
+  border-bottom: 1px solid #000000;
+}
+
+.menu_drop a:hover {
+  background-color: #83b7ff70;
+  padding: 10px 0 10px 20px;
+}
+
+.menu a {
+  padding: 10px;
+  display: block;
+  transition: 0.5s all;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+
+.sideBar_medicines ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+
+
+
+
+
+
+/* _________________________________________ */
 
 .content_medicines {
   display: flex;
@@ -98,12 +150,11 @@
   width: 1200px;
   flex-wrap: wrap;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
 .content {
-  width: 90%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
