@@ -107,3 +107,15 @@
   justify-content: center;
   margin-top: 3em;
 }
+
+.not_found_wrapper {
+  text-align: center;
+  justify-content: center;
+}
+
+.not_found_wrapper h1 {
+  color: #5db0b9;
+  font-size: 44px;
+  font-family: "Roboto Condensed", sans-serif;
+  word-spacing: 15px;
+}

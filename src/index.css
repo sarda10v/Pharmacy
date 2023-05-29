@@ -1,20 +1,22 @@
-body {
-  margin: 0;
-  height: 100%;
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 
-}
+  body {
+    margin: 0;
+    height: 100%;
 
-* {
-  box-sizing: border-box;
-}
+  }
 
-.App {
-  min-height: 100vh !important;
-  display: flex !important;
-  flex-direction: column !important;
-  overflow: hidden;
-}
+  * {
+    box-sizing: border-box;
+  }
 
-.footer_global {
-  margin-top: auto;
-}
+  .App {
+    min-height: 100vh !important;
+    display: flex !important;
+    flex-direction: column !important;
+    overflow: hidden;
+  }
+
+  .footer_global {
+    margin-top: auto;
+  }

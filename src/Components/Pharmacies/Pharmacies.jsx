@@ -4,7 +4,7 @@ import CardPharmacy from "../CardPharmacy/CardPharmacy";
 import { useDispatch, useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
 import { categories } from "../../features/pharmacysReducer";
-
+import not_found from '../../assets/clear_page.png'
 const Pharmacies = () => {
   const pharmacy = useSelector((state) => state.pharmacysReducer.pharmacies);
   const sidebar = useSelector((state) => state.pharmacysReducer.sidebar);
@@ -89,7 +89,10 @@ const Pharmacies = () => {
                   );
                 })
               ) : (
-                <h1>Clear</h1>
+                <div className={styles.not_found_wrapper}>
+                  <h1>Ничего не найдено</h1>
+                  <img src={not_found} alt={not_found} />
+                </div>
               )}
             </div>
           </div>
